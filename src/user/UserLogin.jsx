@@ -8,6 +8,7 @@ function UserLogin() {
   // Submit Part
   const handleSubmit = async (e) => {
     e.preventDefault();
+    popup();
   };
   // User Information Part
 
@@ -28,11 +29,11 @@ function UserLogin() {
   }, [user, pwd]);
 
   // Popup Part
-  // const [popupStyle, showPopup] = useState("hide");
-  // const popup = () => {
-  //   showPopup("login-popup");
-  //   setTimeout(() => showPopup("hide"), 2000);
-  // };
+  const [popupStyle, showPopup] = useState("hide");
+  const popup = () => {
+    showPopup("login-popup");
+    setTimeout(() => showPopup("hide"), 2000);
+  };
 
   return (
     <div className="page">
@@ -56,9 +57,7 @@ function UserLogin() {
           Giriş Yap!
         </div>
 
-        <div
-        //  className={popupStyle}
-        >
+        <div className={popupStyle}>
           <h3>Hatalı Giriş</h3>
           <p>Kullanıcı Adı yada Şifre hatalı!</p>
         </div>
