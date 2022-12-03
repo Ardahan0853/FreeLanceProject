@@ -4,21 +4,18 @@ import "./UserLogin.css";
 
 function UserLogin() {
   const userRef = useRef();
-  const errRef = useRef();
+
   // Submit Part
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!success) {
-      popup();
-    }
   };
   // User Information Part
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
-  const [errMsg, setErrMsg] = useState("");
+  // const [errMsg, setErrMsg] = useState("");
   // Success Part
-  const [success, setSuccess] = useState(true);
+  // const [success, setSuccess] = useState(true);
 
   //
   useEffect(() => {
@@ -27,7 +24,7 @@ function UserLogin() {
 
   // Retrying to Login
   useEffect(() => {
-    setErrMsg("");
+    // setErrMsg("");
   }, [user, pwd]);
 
   // Popup Part
