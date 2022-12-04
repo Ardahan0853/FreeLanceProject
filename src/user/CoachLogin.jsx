@@ -3,7 +3,7 @@ import React from "react";
 function CoachLogin() {
   return (
     <>
-      <div>deneme</div>
+      <div className="h-screen flex justify-center ">deneme</div>
     </>
   );
 }
