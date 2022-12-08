@@ -41,7 +41,7 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "150/Ders",
+    price: "Ders/150",
     features: [
       "Birebir özel antrenman",
       "Birebir diyet takibi",

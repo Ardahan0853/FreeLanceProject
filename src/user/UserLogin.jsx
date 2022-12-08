@@ -8,13 +8,14 @@ function UserLogin() {
   // Submit Part
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     popup();
   };
   // User Information Part
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
-  // const [errMsg, setErrMsg] = useState("");
+
   // Success Part
   // const [success, setSuccess] = useState(true);
 
@@ -22,11 +23,6 @@ function UserLogin() {
   useEffect(() => {
     userRef.current.focus();
   }, []);
-
-  // Retrying to Login
-  useEffect(() => {
-    // setErrMsg("");
-  }, [user, pwd]);
 
   // Popup Part
   const [popupStyle, showPopup] = useState("hide");
