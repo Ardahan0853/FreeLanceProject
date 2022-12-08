@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./UserLogin.css";
+import axios from "axios";
 
 function UserLogin() {
   const userRef = useRef();
@@ -8,16 +9,18 @@ function UserLogin() {
   // Submit Part
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    popup();
+    try {
+      const res = await axios.post("/login", { username, password });
+      setUser(res.data);
+    } catch (err) {
+      popup();
+    }
   };
   // User Information Part
 
-  const [user, setUser] = useState("");
-  const [pwd, setPwd] = useState("");
-
-  // Success Part
-  // const [success, setSuccess] = useState(true);
+  const [user, setUser] = useState("Üye Girişi");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   //
   useEffect(() => {
@@ -33,20 +36,20 @@ function UserLogin() {
 
   return (
     <div className="page">
-      <div className="cover">
-        <h1>Üye Girişi</h1>
+      <div className="cover flex justify-center">
+        <h2 className="text-center text-yellow-500">{user}</h2>
         <input
           type="text"
           placeholder="Kullanıcı Adı"
           ref={userRef}
-          onChange={(e) => setUser(e.target.value)}
-          value={user}
+          onChange={(e) => setUsername(e.target.value)}
+          value={username}
         />
         <input
           type="password"
           placeholder="Şifre"
-          onChange={(e) => setPwd(e.target.value)}
-          value={pwd}
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
 
         <div className="login-btn" onClick={handleSubmit}>
