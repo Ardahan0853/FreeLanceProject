@@ -2,15 +2,47 @@ import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./UserLogin.css";
 import axios from "axios";
+import jwt_decode from "jwt-decode";
 
 function UserLogin() {
   const userRef = useRef();
+  // Expire olan tokeni refresh etme.
+  const refreshToken = async () => {
+    try {
+      const res = await axios.post("/refresh", { token: user.refreshToken });
+      setUser({
+        ...user,
+        accessToken: res.data.accessToken,
+        refreshToken: res.data.refreshToken,
+      });
+      return res.data;
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const axiosJWT = axios.create();
+
+  axiosJWT.interceptors.request.use(
+    async (config) => {
+      let currentDate = new Date();
+      const decodedToken = jwt_decode(user.accessToken);
+      if (decodedToken.exp * 1000 < currentDate.getTime()) {
+        const data = await refreshToken();
+        config.headers["authorization"] = "Bearer " + data.accessToken;
+      }
+      return config;
+    },
+    (error) => {
+      return Promise.reject(error);
+    }
+  );
 
   // Submit Part
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/login", { username, password });
+      const res = await axios.post("/api/login", { username, password });
       setUser(res.data);
     } catch (err) {
       popup();
@@ -37,7 +69,9 @@ function UserLogin() {
   return (
     <div className="page">
       <div className="cover flex justify-center">
-        <h2 className="text-center text-yellow-500">{user}</h2>
+        <h2 className="text-center text-yellow-500" key={user.id}>
+          {user.username}
+        </h2>
         <input
           type="text"
           placeholder="Kullanıcı Adı"
