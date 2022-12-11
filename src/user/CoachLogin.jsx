@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import "./UserLogin.css";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
+import { redirect } from "react-router-dom";
 
 function UserLogin() {
   const userRef = useRef();
@@ -40,13 +41,9 @@ function UserLogin() {
 
   // Submit Part
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post("/api/coachlogin", { username, password });
-      setUser(res.data);
-    } catch (err) {
-      popup();
-    }
+    // e.preventDefault();
+    if (e) redirect("/dashboard");
+    else popup();
   };
   // User Information Part
 
@@ -97,7 +94,7 @@ function UserLogin() {
         />
 
         <div className="login-btn" onClick={handleSubmit}>
-          Giriş Yap!
+          <a href="https://fitbodyclub.netlify.app/dashboard">Giriş Yap!</a>
         </div>
 
         <div className={popupStyle}>
