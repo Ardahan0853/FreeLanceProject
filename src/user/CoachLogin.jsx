@@ -93,14 +93,13 @@ function UserLogin() {
           value={password}
         />
 
-        <div className="login-btn" onClick={handleSubmit}>
-          <Link
-            to="/dashboard"
-            href="https://fitbodyclub.netlify.app/dashboard"
-          >
-            Giriş Yap!
-          </Link>
-        </div>
+        <Link
+          className="login-btn"
+          to="/dashboard"
+          href="https://fitbodyclub.netlify.app/dashboard"
+        >
+          <div onClick={handleSubmit}>Giriş Yap!</div>
+        </Link>
 
         <div className={popupStyle}>
           <h3>Hatalı Giriş</h3>
