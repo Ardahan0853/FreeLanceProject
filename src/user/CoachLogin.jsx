@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import "./UserLogin.css";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
-import { redirect } from "react-router-dom";
+import { redirect, Link } from "react-router-dom";
 
 function UserLogin() {
   const userRef = useRef();
@@ -94,7 +94,12 @@ function UserLogin() {
         />
 
         <div className="login-btn" onClick={handleSubmit}>
-          <a href="https://fitbodyclub.netlify.app/dashboard">Giriş Yap!</a>
+          <Link
+            to="/dashboard"
+            href="https://fitbodyclub.netlify.app/dashboard"
+          >
+            Giriş Yap!
+          </Link>
         </div>
 
         <div className={popupStyle}>
