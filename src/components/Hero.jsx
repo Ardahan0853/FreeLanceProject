@@ -65,16 +65,16 @@ function Hero() {
         </div>
         {/*Butonlar  */}
         <div className="hero-buttons">
-          <Link to={"https://fitbodymobile.netlify.app/"}>
+          <a href={"https://fitbodymobile.netlify.app/"}>
             <button id="button1" className="btn">
               Üye Girişi
             </button>
-          </Link>
-          <Link to={"https://fitbodymobile.netlify.app/"}>
+          </a>
+          <a href={"https://fitbodymobile.netlify.app/"}>
             <button id="button2" className="btn">
               Antrenör Girişi
             </button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className="right-h">
