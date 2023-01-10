@@ -6,7 +6,6 @@ import Heart from "../assets/heart.png";
 import Calories from "../assets/calories.png";
 import NumberCounter from "number-counter";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const transition = { type: "spring", duration: 3 };
 const mobile = window.innerWidth <= 768 ? true : false;
