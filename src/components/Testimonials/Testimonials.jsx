@@ -14,9 +14,9 @@ function Testimonials() {
   return (
     <div className="Testimonials">
       <div className="left-t">
-        <span>Referanslarımızın</span>
-        <span className="bosluk-text">Hakkımızdaki</span>
-        <span>Düşünceleri</span>
+        <span>Fitbody'de</span>
+        <span className="bosluk-text">Sağladığımız</span>
+        <span>İmkanlar</span>
         <motion.span
           key={selected}
           initial={{ opacity: 0, x: 100 }}
@@ -30,7 +30,7 @@ function Testimonials() {
           <span style={{ color: "var(--yellow)" }}>
             {testimonialsData[selected].name}
           </span>
-          -{testimonialsData[selected].status}
+          {testimonialsData[selected].status}
         </span>
       </div>
       <div className="right-t">
@@ -65,6 +65,7 @@ function Testimonials() {
             src={leftArrow}
             alt=""
           />
+          <span> </span>
           <img
             onClick={() => {
               selected === tlength - 1

@@ -21,13 +21,13 @@ function Program() {
       {/* Program Kategorisi altındaki segmentler */}
       <div className="program-catagories">
         {programsData.map((program, i) => (
-          <div className="category" key={i}>
+          <div onClick={handleClick} className="category" key={i}>
             {program.image}
             <span>{program.heading} </span>
             <span>{program.details} </span>
             <div className="join-now">
               <img src={RightArrow} alt="" />
-              <span onClick={handleClick}>Katıl Bize!</span>
+              <span>Katıl Bize!</span>
             </div>
           </div>
         ))}

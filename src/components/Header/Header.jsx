@@ -41,6 +41,24 @@ function Header() {
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
+              to="Testimonials"
+              spy={true}
+              smooth={true}
+            >
+              İmkanlar
+            </Link>
+          </li>
+          <Link
+            onClick={() => setMenuOpened(false)}
+            to="reasons"
+            spy={true}
+            smooth={true}
+          >
+            Olanaklar
+          </Link>
+          <li>
+            <Link
+              onClick={() => setMenuOpened(false)}
               to="programs"
               spy={true}
               smooth={true}
@@ -48,16 +66,7 @@ function Header() {
               Programlar
             </Link>
           </li>
-          <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="reasons"
-              spy={true}
-              smooth={true}
-            >
-              Olanaklar
-            </Link>
-          </li>
+          <li></li>
           <li>
             <Link
               onClick={() => setMenuOpened(false)}
@@ -65,18 +74,7 @@ function Header() {
               spy={true}
               smooth={true}
             >
-              Paketler
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="Testimonials"
-              spy={true}
-              smooth={true}
-            >
-              Referanslar
+              Planlar
             </Link>
           </li>
         </ul>

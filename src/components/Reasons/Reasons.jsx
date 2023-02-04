@@ -6,15 +6,36 @@ import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 
 import whiteTick from "../../assets/whiteTick.png";
+import { useState, useEffect } from "react";
 
 function Reasons() {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setIsDesktop(true);
+      } else {
+        setIsDesktop(false);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="Reasons" id="reasons">
-      <div className="left-r">
-        <img src={image1} alt="" />
-        <img src={image3} alt="" />
-        <img src={image4} alt="" />
-      </div>
+      {isDesktop && (
+        <div className="left-r">
+          <img src={image1} alt="" />
+          <img src={image3} alt="" />
+          <img src={image4} alt="" />
+        </div>
+      )}
       <div className="right-r">
         <span>Bizi Seçmeniz</span>
         <div>

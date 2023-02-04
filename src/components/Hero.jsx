@@ -65,8 +65,8 @@ function Hero() {
         {/*Butonlar  */}
         <div className="hero-buttons">
           <a href={"https://fitbodyclub.netlify.app/"}>
-            <button id="button1" className="btn">
-              Vitamin Bar
+            <button id="button2" className="btn">
+              FitBodyCafe
             </button>
           </a>
         </div>
