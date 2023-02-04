@@ -11,6 +11,9 @@ const transition = { type: "spring", duration: 3 };
 const mobile = window.innerWidth <= 768 ? true : false;
 
 function Hero() {
+  const handleClick = () => {
+    window.open("https://fitbodyclub.netlify.app/", "_blank");
+  };
   return (
     <div className="hero" id="home">
       <div className="blur hero-blur"></div>
@@ -63,12 +66,10 @@ function Hero() {
           </div>
         </div>
         {/*Butonlar  */}
-        <div className="hero-buttons">
-          <a href={"https://fitbodyclub.netlify.app/"}>
-            <button id="button2" className="btn">
-              FitBodyCafe
-            </button>
-          </a>
+        <div onClick={handleClick} className="hero-buttons">
+          <button id="button2" className="btn">
+            FitBodyCafe
+          </button>
         </div>
       </div>
       <div className="right-h">
