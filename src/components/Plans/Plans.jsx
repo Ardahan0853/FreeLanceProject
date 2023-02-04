@@ -2,7 +2,15 @@ import React from "react";
 import { plansData } from "../../data/plansData";
 import "./Plans.css";
 import whiteTick from "../../assets/whiteTick.png";
+
 function Plans() {
+  const handleClick = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=<phone_number>&text=<message>",
+      "_blank"
+    );
+  };
+
   return (
     <div className="plans-container" id="plans">
       <div className="blur plan1"></div>
@@ -29,7 +37,9 @@ function Plans() {
               ))}
             </div>
             <span>Daha fazlası için -</span>
-            <button className="btn">Tıklayın!</button>
+            <button onClick={handleClick} className="btn">
+              Tıklayın!
+            </button>
           </div>
         ))}
       </div>

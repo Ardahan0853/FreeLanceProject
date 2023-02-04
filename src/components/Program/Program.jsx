@@ -4,6 +4,12 @@ import "./Program.css";
 import RightArrow from "../../assets/rightArrow.png";
 
 function Program() {
+  const handleClick = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=<phone_number>&text=<message>",
+      "_blank"
+    );
+  };
   return (
     <div className="Programs" id="programs">
       {/* header */}
@@ -21,7 +27,7 @@ function Program() {
             <span>{program.details} </span>
             <div className="join-now">
               <img src={RightArrow} alt="" />
-              <span>Katıl Bize!</span>
+              <span onClick={handleClick}>Katıl Bize!</span>
             </div>
           </div>
         ))}

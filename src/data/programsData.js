@@ -11,8 +11,7 @@ export const programsData = [
       </svg>
     ),
     heading: "Güç Antrenmanı",
-    details:
-      "Bu program ile, en iyi ekipmanlar ile gücünüzü arttırmayı öğreneceksiniz.",
+    details: "En iyi ekipmanlar ile gücünüzü arttırmayı öğreneceksiniz.",
   },
   {
     image: (
@@ -32,7 +31,7 @@ export const programsData = [
     ),
     heading: "Dayanıklılık Antrenmanı",
     details:
-      "Bu program ile, dayanıklılığınızı en üst seviyeye taşıyacak,sınırlarınızı aşacaksınız.",
+      "Dayanıklılığınızı en üst seviyeye taşıyacak,sınırlarınızı aşacaksınız.",
   },
   {
     image: (
@@ -47,7 +46,7 @@ export const programsData = [
     ),
     heading: "Yağ Yakımı",
     details:
-      "Bu program ile istenmeyen kilo ve yağlarınızdan kurtulup yeni bir hayata başlayacaksınız.",
+      "İstenmeyen kilo ve yağlarınızdan kurtulup yeni bir hayata başlayacaksınız.",
   },
   {
     image: (
@@ -62,6 +61,6 @@ export const programsData = [
     ),
     heading: "Fitness",
     details:
-      "Bu program ile body-building yapmadan sağlıklı bir hayatın kapılarını aralayacaksınız.",
+      "Body-building yapmadan sağlıklı bir hayatın kapılarını aralayacaksınız.",
   },
 ];
