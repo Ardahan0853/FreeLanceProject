@@ -243,9 +243,9 @@
   }
   .hero-image {
     position: relative;
-    width: 18rem;
+    width: 17rem;
     left: 7rem;
-    top: 2rem;
+    top: 3rem;
     align-self: center;
   }
   .hero-image-back {
