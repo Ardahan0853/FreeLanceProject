@@ -12,7 +12,7 @@ const WhatsAppButton = () => {
     <button
       onClick={handleClick}
       style={{
-        background: "linear-gradient(to right, #ffc94d, #fffd7e)",
+        background: "linear-gradient(to right, #000000, #aaaaaa)",
         border: "none",
         borderRadius: "10px",
         padding: "px 20px",
