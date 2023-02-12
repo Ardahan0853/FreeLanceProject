@@ -3,7 +3,7 @@ import React from "react";
 const WhatsAppButton = () => {
   const handleClick = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=<05434242415>&text=<message>",
+      "https://api.whatsapp.com/send?phone=<05434242415>&text=<FitBody!>",
       "_blank"
     );
   };
