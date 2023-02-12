@@ -6,7 +6,7 @@ import whiteTick from "../../assets/whiteTick.png";
 function Plans() {
   const handleClick = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=<phone_number>&text=<message>",
+      "https://api.whatsapp.com/send?phone=<+905434242415>&text=<message>",
       "_blank"
     );
   };
