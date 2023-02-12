@@ -45,11 +45,11 @@ function Reasons() {
         <div className="details-r">
           <div>
             <img src={whiteTick} alt=""></img>
-            <span>Deneyimli Teknik Ekip</span>
+            <span>Deneyimli Antrenör</span>
           </div>
           <div>
             <img src={whiteTick} alt="" />
-            <span>Geniş Çalışma Sahası</span>
+            <span>Geniş Çalışma Alanı</span>
           </div>
           <div>
             <img src={whiteTick} alt="" />
@@ -61,7 +61,7 @@ function Reasons() {
           </div>
           <div>
             <img src={whiteTick} alt="" />
-            <span>Supplement Bar Alanı </span>
+            <span>Vitamin Bar Alanı - FitCafe </span>
           </div>
           <div>
             <img src={whiteTick} alt="" />

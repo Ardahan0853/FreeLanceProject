@@ -24,10 +24,11 @@
   width: 17rem;
 }
 
-.plan:nth-child(2) {
+.plan:nth-child(3) {
   background: var(--planCard);
   transform: scale(1.1);
 }
+
 .plan > svg {
   fill: var(--yellow);
   width: 2rem;

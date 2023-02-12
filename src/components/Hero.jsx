@@ -40,7 +40,7 @@ function Hero() {
           <div>
             <span>
               Burada sizlere hayalinizdeki vücuda kavuşmanıza yardım ediyoruz.
-              Sen de yapabilirsin!
+              Siz de yapabilirsiniz!
             </span>
           </div>
         </div>
@@ -48,19 +48,19 @@ function Hero() {
         <div className="figures">
           <div>
             <span>
-              <NumberCounter end={500} start={400} delay="4" preFix="+" />
+              <NumberCounter end={1600} start={1000} delay="4" preFix="+" />
             </span>
             <span>metrekare</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={2000} start={1900} delay="5" preFix="+" />
+              <NumberCounter end={1000} start={500} delay="5" preFix="+" />
             </span>
-            <span>Üyelik</span>
+            <span>Aktif Üyelik</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={200} start={150} delay="3" preFix="+" />
+              <NumberCounter end={500} start={150} delay="3" preFix="+" />
             </span>
             <span>Ekipman</span>
           </div>
@@ -68,7 +68,7 @@ function Hero() {
         {/*Butonlar  */}
         <div onClick={handleClick} className="hero-buttons">
           <button id="button2" className="btn">
-            FitBodyCafe
+            FitCafe
           </button>
         </div>
       </div>

@@ -14,7 +14,7 @@ function Testimonials() {
   return (
     <div className="Testimonials">
       <div className="left-t">
-        <span>Fitbody'de</span>
+        <span>Fıtbody'de</span>
         <span className="bosluk-text">Sağladığımız</span>
         <span>İmkanlar</span>
         <motion.span

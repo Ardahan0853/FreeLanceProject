@@ -36,7 +36,11 @@ function Plans() {
                 </div>
               ))}
             </div>
-            <span>Daha fazlası için -</span>
+            <span>
+              {i === plansData.length - 1
+                ? "**Suplamentler Dahil Değildir**"
+                : "Daha fazlası için"}
+            </span>
             <button onClick={handleClick} className="btn">
               Tıklayın!
             </button>

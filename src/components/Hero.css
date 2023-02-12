@@ -97,10 +97,23 @@
 }
 #button2 {
   color: white;
-  background-color: transparent;
+  background-color: var(--yellow);
   height: 2.5rem;
   width: 15rem;
-  border: 2px solid var(--yellow);
+  border: none;
+  font-size: 1.2em;
+  border-radius: 0.3rem;
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#button2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
 .right-h > .btn {

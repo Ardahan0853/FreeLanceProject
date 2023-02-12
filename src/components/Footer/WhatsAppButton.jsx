@@ -12,19 +12,27 @@ const WhatsAppButton = () => {
     <button
       onClick={handleClick}
       style={{
-        background: "linear-gradient(to right, #000000, #aaaaaa)",
+        background:
+          "linear-gradient(to right, var(--yellow), var(--yellowDark))",
         border: "none",
-        borderRadius: "10px",
-        padding: "px 20px",
+        borderRadius: "1rem",
+        padding: "1rem 2rem",
         color: "white",
         fontWeight: "bold",
         cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <img
         src="https://img.icons8.com/color/48/000000/whatsapp.png"
         alt="WhatsApp"
+        style={{
+          width: "2rem",
+          marginRight: "1rem",
+        }}
       />
+      <span>WhatsApp'a Bağlan</span>
     </button>
   );
 };

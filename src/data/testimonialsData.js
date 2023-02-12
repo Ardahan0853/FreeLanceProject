@@ -8,22 +8,19 @@ import image6 from "../assets/t-image6.png";
 export const testimonialsData = [
   {
     image: image1,
-    review:
-      "Spor salonumuz, toplamda 1000 metrekareden fazla ferah bir alan sunar. Bu alan, her türlü spor aktivitesini rahatça yapabileceğiniz bir ortam sağlar. Geniş ve aydınlık salonda, kardiyo ekipmanlarından güç aletlerine kadar her şey mevcuttur.",
+    review: "",
     name: "",
     status: "",
   },
   {
     image: image2,
-    review:
-      "Kadınların sporcuların sporlarını ve projelerini rahatça yapabilecekleri bu alan, aynı zamanda sosyalleşmelerine ve kendilerini geliştirmelerine de olanak tanır.",
+    review: "",
     name: "Kadınlara Özel Çalışma Alanı",
     status: "-TEST",
   },
   {
     image: image3,
-    review:
-      "Her türlü egzersiz için uygun aletler mevcuttur ve kullanıcıların ihtiyacı olan her şey orada bulunur. Ayrıca, aletler sürekli olarak kontrol edilir ve gerektiğinde tamir edilir, böylece mümkün olan en iyi egzersiz deneyimi sunulur. ",
+    review: "",
     name: "Test-",
     status: "Test",
   },
