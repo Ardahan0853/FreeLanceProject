@@ -66,7 +66,6 @@ function Header() {
               Programlar
             </Link>
           </li>
-          <li></li>
           <li>
             <Link
               onClick={() => setMenuOpened(false)}

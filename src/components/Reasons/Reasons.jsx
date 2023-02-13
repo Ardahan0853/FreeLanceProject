@@ -57,6 +57,10 @@ function Reasons() {
           </div>
           <div>
             <img src={whiteTick} alt="" />
+            <span>Profosyonel Vücut Analiz Cihazı </span>
+          </div>
+          <div>
+            <img src={whiteTick} alt="" />
             <span>Saygılı Bir Ortam</span>
           </div>
           <div>

@@ -6,7 +6,7 @@ import RightArrow from "../../assets/rightArrow.png";
 function Program() {
   const handleClick = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=<phone_number>&text=<message>",
+      "https://api.whatsapp.com/send?phone=<05434242415>&text=<FitBody!>",
       "_blank"
     );
   };
@@ -27,7 +27,7 @@ function Program() {
             <span>{program.details} </span>
             <div className="join-now">
               <img src={RightArrow} alt="" />
-              <span>Katıl Bize!</span>
+              <span>Bize Katılın!</span>
             </div>
           </div>
         ))}
