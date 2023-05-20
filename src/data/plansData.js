@@ -11,7 +11,7 @@ export const plansData = [
       </svg>
     ),
     name: "GİRİŞ PLAN",
-    price: "500",
+    price: "600",
     features: [" 1 Aylık Dönem", " Çalışma Programı", " Diyet Programı"],
   },
   {
@@ -26,7 +26,7 @@ export const plansData = [
       </svg>
     ),
     name: "TEMEL PLAN",
-    price: "1200",
+    price: "1500",
     features: [" 3 Aylık Dönem", " Çalışma Programı", " Diyet Programı"],
   },
   {
@@ -41,9 +41,9 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "2500",
+    price: "3000",
     features: [
-      " 20 Profosyonel İdman",
+      " 20 Profesyonel idman",
       " Birebir özel antrenman",
       " Birebir diyet takibi",
       " Yarışmaya Hazırlık",
@@ -61,7 +61,7 @@ export const plansData = [
       </svg>
     ),
     name: "GELİŞMİŞ PLAN",
-    price: "2000",
+    price: "2500",
     features: [" 6 Aylık Dönem", " Çalışma Programı", " Diyet Programı"],
   },
   {
@@ -76,7 +76,7 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN",
-    price: "3000",
+    price: "4000",
     features: [" 12 Aylık Dönem", " Çalışma Programı", " Diyet Programı"],
   },
 ];

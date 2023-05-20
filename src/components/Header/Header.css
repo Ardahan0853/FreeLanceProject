@@ -1,10 +1,12 @@
 .header {
   display: flex;
   justify-content: space-between;
+  
+  
 }
 
 .logo {
-  width: 10rem;
+  width: 18rem;
 }
 
 .header-menu {
@@ -24,13 +26,12 @@
 
 @media screen and (max-width: 768px) {
   .header > :nth-child(2) {
+    display: none;
     position: fixed;
     right: 2rem;
     z-index: 99;
   }
   .header-menu {
-    flex-direction: column;
-    background-color: var(--appColor);
-    padding: 2rem;
+    display: none;
   }
 }

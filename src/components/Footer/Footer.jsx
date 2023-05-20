@@ -1,23 +1,40 @@
 import React from "react";
 import "./Footer.css";
-import WhatsAppButton from "./WhatsAppButton.jsx";
+import instagram from "../../assets/instagram.png";
+import whatsapp from "../../assets/WhatsApp.png";
+
 
 function Footer() {
   return (
     <div className="Join" id="join-us">
       <div className="left-j">
-        <hr />
+        
         <div>
           {/* <span className="bosluk-text">Lütfen </span>
           <span>Bize</span> */}
+          <hr />
         </div>
-        <div>
+        <div className="d-flex">
+        
           <span></span>
           <span className="bosluk-text"> Aklınıza Takılan Her Şey İçin</span>
-          <span>
-            <WhatsAppButton />
-          </span>
+          <div className="social">
+          
+
+          
+          <a target={"blank"} href="https://www.instagram.com/fitbodyyclub/">
+            <img height={"33rem"} src={instagram} alt="" />
+          </a>
+          <div className="d-flex-2">
+            <img style={{cursor:"default"}} height={"36rem"} src={whatsapp} alt="" />
+            <h6>+90 543 424 24 16</h6>
+          </div>
+          
+          
+          
         </div>
+        </div>
+      
       </div>
 
       <div className="right-j gmap_canvas mapouter map">

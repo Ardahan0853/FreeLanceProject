@@ -10,7 +10,6 @@ const WhatsAppButton = () => {
 
   return (
     <button
-      onClick={handleClick}
       style={{
         background:
           "linear-gradient(to right, var(--yellow), var(--yellowDark))",
@@ -19,7 +18,6 @@ const WhatsAppButton = () => {
         padding: "1rem 2rem",
         color: "white",
         fontWeight: "bold",
-        cursor: "pointer",
         display: "flex",
         alignItems: "center",
       }}
@@ -32,7 +30,6 @@ const WhatsAppButton = () => {
           marginRight: "1rem",
         }}
       />
-      <span>WhatsApp'a Bağlan</span>
     </button>
   );
 };

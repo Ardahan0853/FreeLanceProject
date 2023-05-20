@@ -1,22 +1,25 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  background-image: url(../assets/image2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
+  
 }
 
 .left-h {
-  padding: 2rem;
-  padding-top: 1.5rem;
+  padding: 0 2rem;
   flex: 3;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%
+  
 }
 
-.right-h {
-  flex: 1;
-  position: relative;
-  background-color: var(--yellow);
-}
+
 
 .slogan {
   margin-top: 4rem;
@@ -54,35 +57,86 @@
   font-weight: bold;
   color: white;
   text-overflow: inherit;
+  box-sizing: border-box;
+  text-shadow: 0px 0px 20px black;
+  
 }
 
-.hero-text > div:nth-of-type(3) {
+
+
+.hayal-vucud-div{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.bosluk-text-divelement{
+  display: inline;
+}
+.bosluk-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 0px 0px 15px black;
+}
+
+.bosluk-text2{
+  display: inline;
+}
+
+.hero-text > div:nth-of-type(2) {
   font-size: 1rem;
   font-weight: 200;
   text-transform: none;
   letter-spacing: 1px;
   width: 80%;
+  justify-content: center;
 }
 
+.button-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  text-shadow: 0px 0px 20px black;
+}
+.button-body span{
+  color:black;
+}
+
+.figures > div > span {
+  margin-right: 5px;
+}
 .figures {
   display: flex;
   gap: 2rem;
+  
 }
 
 .figures > div {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin: 5px;
 }
 .figures > div > span:nth-of-type(1) {
   color: white;
   font-size: 2rem;
 }
 .figures > div > span:nth-of-type(2) {
-  color: var(--gray);
+  color: white;
   text-transform: uppercase;
+  margin: 2px;
+}
+
+
+#button2{
+  display: none;
 }
 
 .hero-buttons {
+  
   display: flex;
   gap: 1rem;
   font-weight: bolder;
@@ -96,11 +150,12 @@
   font-weight: bolder;
 }
 #button2 {
-  color: white;
+  color: black;
   background-color: var(--yellow);
   height: 2.5rem;
   width: 15rem;
-  border: none;
+  border: 5px solid black;
+  border-radius: 10px;
   font-size: 1.2em;
   border-radius: 0.3rem;
   box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
@@ -180,11 +235,7 @@
   font-size: 1.5rem;
 }
 
-.hero-blur {
-  width: 22rem;
-  height: 30rem;
-  left: 0;
-}
+
 .hero-image {
   position: absolute;
   top: 10rem;
@@ -202,10 +253,14 @@
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
+    background-image: url(../assets/image2small.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    
   }
-  .hero-blur {
-    width: 14rem;
-  }
+
+ 
+  
   .slogan {
     margin-top: 0;
     font-size: small;
@@ -216,21 +271,36 @@
     align-items: center;
     justify-content: center;
   }
-  .hero-text > div:nth-of-type(3) {
+  .hero-text > div:nth-of-type(2) {
     font-size: small;
     font-weight: 200;
     letter-spacing: 1px;
     text-align: center;
   }
-
+  .flex-span{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .bosluk-text-divelement{
+    text-align: center;
+  }
+  .figures{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    
+  }
   .hero-buttons {
     justify-content: center;
   }
   .figures > div > span:nth-last-of-type(1) {
-    font-size: large;
+    font-size: 15px;
+    text-shadow: 0 0 50px black;
   }
   .figures > div > span:nth-last-of-type(2) {
-    font-size: small;
+    font-size: 15px;
+    text-shadow: 0 0 50px black;
   }
   .right-h {
     position: relative;
@@ -266,4 +336,38 @@
     left: 2rem;
     top: 0;
   }
+  .button-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    text-shadow: 0px 0px 50px black;
+  }
+
+}
+
+@media screen and (max-width:400px){
+  .hero{
+    height: 700px;
+    padding: 1rem;
+    
+  }
+  .left-h{
+    padding: 0rem;
+  }
+  
+  .logo{
+    width: 10rem;
+    margin: auto;
+    
+  }
+  .flex-span{
+    font-size: 1.5rem;
+  }
+  div .left-h{
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  
 }

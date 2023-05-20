@@ -10,12 +10,12 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <Testimonials />
       <Plans />
       <Reasons />
       <Program />
+      <Testimonials />
       <Footer />
-      <Bora />
+      <Bora/>
     </>
   );
 }

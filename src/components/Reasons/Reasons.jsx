@@ -29,45 +29,29 @@ function Reasons() {
   }, []);
   return (
     <div className="Reasons" id="reasons">
-      {isDesktop && (
-        <div className="left-r">
-          <img src={image1} alt="" />
-          <img src={image3} alt="" />
-          <img src={image4} alt="" />
-        </div>
-      )}
+      
       <div className="right-r">
-        <span>Bizi Seçmeniz</span>
-        <div>
-          <span className="bosluk-text">İçin </span>
-          <span>Nedenler</span>
+        <div className="right-r-div">
+          <span  className="span-yellow">Bizi Seçmeniz </span> <span className="bosluk-text">İçin </span> <span className="span-yellow">Nedenler</span>
         </div>
         <div className="details-r">
-          <div>
+          <div className="textalign-left">
             <img src={whiteTick} alt=""></img>
-            <span>Deneyimli Antrenör</span>
+            <span>Deneyimli Antrenörler</span>
           </div>
-          <div>
+          <div className="textalign-left">
             <img src={whiteTick} alt="" />
             <span>Geniş Çalışma Alanı</span>
           </div>
-          <div>
+          <div className="textalign-left">
             <img src={whiteTick} alt="" />
-            <span>Son Teknoloji Ekipmanlar</span>
+            <span>Profesyonel Vücut Analiz Cihazı </span>
           </div>
-          <div>
+          <div className="textalign-left">
             <img src={whiteTick} alt="" />
-            <span>Profosyonel Vücut Analiz Cihazı </span>
+            <span>Vitamin Bar Alanı - FItCafe </span>
           </div>
-          <div>
-            <img src={whiteTick} alt="" />
-            <span>Saygılı Bir Ortam</span>
-          </div>
-          <div>
-            <img src={whiteTick} alt="" />
-            <span>Vitamin Bar Alanı - FitCafe </span>
-          </div>
-          <div>
+          <div className="textalign-left">
             <img src={whiteTick} alt="" />
             <span>Üst Düzey Hijyen </span>
           </div>

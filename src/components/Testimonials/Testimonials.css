@@ -1,74 +1,45 @@
 .Testimonials {
   display: flex;
-  gap: 1rem;
-  padding: 0 2rem;
+  
+  padding: 10rem;
+  min-width: 400px;
+  height: 60rem;
+  margin-bottom: 5rem;
+  
 }
 
-.left-t {
-  display: flex;
-  flex: 1 1;
-  gap: 2rem;
-  flex-direction: column;
-  text-transform: uppercase;
-  color: white;
-}
 
-.left-t > :nth-child(1) {
-  color: var(--yellow);
-  font-weight: bold;
-  font-size: 3rem;
-}
-.left-t > :nth-child(2),
-.left-t > :nth-child(3) {
-  font-weight: bold;
-  font-size: 3rem;
-}
-
-.left-t > :nth-child(4) {
-  text-transform: none;
-  text-align: justify;
-  letter-spacing: 2px;
-  line-height: 40px;
-}
 
 .right-t {
+  
   flex: 1;
   position: relative;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  background: var(--planCard);
+  border-radius: 40px;
+  
 }
 
 .right-t > img {
-  position: absolute;
-  width: 17rem;
-  height: 20rem;
+  width: 50rem;
+  min-width: 70%;
   object-fit: cover;
-  right: 8rem;
-  top: 2rem;
+  border-radius: 10px;
+  height: 75%;
+  margin: auto;
 }
 
-.right-t > :nth-child(1) {
-  position: absolute;
-  width: 17rem;
-  height: 20rem;
-  border: 2px solid yellow;
-  background-color: transparent;
-  right: 9rem;
-  top: 1rem;
-}
-.right-t > :nth-child(2) {
-  position: absolute;
-  width: 17rem;
-  height: 19rem;
-  right: 7rem;
-  top: 4rem;
-  background: var(--yellowCard);
-}
+
 
 .arrows {
   display: flex;
   gap: 1rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 3rem;
+  position: absolute;  
+    left: 50%; 
+    top: 90%;
+    transform: translate(-50%);
 }
 
 .arrows > img {
@@ -76,34 +47,33 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 1110px) {
   .Testimonials {
-    flex-direction: column;
-  }
-  .left-t > :nth-child(2),
-  .left-t > :nth-child(3) {
-    font-size: xx-large;
+    background: var(--planCard);;
+    height: 40vh;
+    width: 100%;
+    padding: 0;
   }
   .right-t {
+    
+    width: 100%;
+    height: 100%;
+    
+  }
+  .right-t img {
+    width: 50%;
+  }
+  
+  .arrows {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .right-t > div {
-    display: none;
-    position: relative;
-  }
-  .right-t > img {
-    top: 0;
-    right: 0;
-    position: relative;
-    align-self: center;
-  }
-  .right-t > :last-child {
-    display: block;
-    bottom: 0;
-    left: 0;
+    gap: 1rem;
+    width: 30px;
+    position: absolute;  
+      left: 48%; 
+      top: 92%;
+      transform: translate(-50%);
   }
 }

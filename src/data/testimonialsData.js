@@ -1,9 +1,11 @@
-import image1 from "../assets/t-image1.png";
-import image2 from "../assets/t-image2.png";
-import image3 from "../assets/t-image3.png";
-import image4 from "../assets/t-image4.png";
-import image5 from "../assets/t-image5.png";
-import image6 from "../assets/t-image6.png";
+import image1 from "../assets/t1.jpg";
+import image2 from "../assets/t2.jpg";
+import image3 from "../assets/t3.jpg";
+import image4 from "../assets/t4.jpg";
+import image5 from "../assets/t5.jpg";
+import image6 from "../assets/t6.jpg";
+import image7 from "../assets/t7.jpg";
+
 
 export const testimonialsData = [
   {
@@ -15,31 +17,38 @@ export const testimonialsData = [
   {
     image: image2,
     review: "",
-    name: "Kadınlara Özel Çalışma Alanı",
-    status: "-TEST",
+    name: "",
+    status: "",
   },
   {
     image: image3,
     review: "",
-    name: "Test-",
-    status: "Test",
+    name: "",
+    status: "",
   },
   {
     image: image4,
     review: "",
-    name: "Test-",
-    status: "Test",
+    name: "",
+    status: "",
   },
   {
     image: image5,
     review: "",
-    name: "Test-",
-    status: "Test",
+    name: "",
+    status: "",
   },
   {
     image: image6,
     review: "",
-    name: "Test-",
-    status: "Test",
+    name: "",
+    status: "",
   },
+  {
+    image: image7,
+    review: "",
+    name: "",
+    status: "",
+  },
+  
 ];

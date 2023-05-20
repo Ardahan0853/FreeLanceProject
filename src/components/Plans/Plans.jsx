@@ -6,7 +6,7 @@ import whiteTick from "../../assets/whiteTick.png";
 function Plans() {
   const handleClick = () => {
     window.open(
-      "https://api.whatsapp.com/send?phone=<+905434242415>&text=<message>",
+      "https://www.instagram.com/fitbodyyclub/",
       "_blank"
     );
   };
@@ -38,7 +38,7 @@ function Plans() {
             </div>
             <span>
               {i === plansData.length - 1
-                ? "**Suplamentler Dahil Değildir**"
+                ? "Daha fazlası için"
                 : "Daha fazlası için"}
             </span>
             <button onClick={handleClick} className="btn">

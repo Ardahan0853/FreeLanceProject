@@ -1,112 +1,71 @@
 import Header from "./Header/Header";
 import "./Hero.css";
-import hero_image from "../assets/hero_image.png";
-import hero_image_back from "../assets/hero_image_back.png";
-import Heart from "../assets/heart.png";
-import Calories from "../assets/calories.png";
 import NumberCounter from "number-counter";
-import { motion } from "framer-motion";
 
 const transition = { type: "spring", duration: 3 };
 const mobile = window.innerWidth <= 768 ? true : false;
 
 function Hero() {
   const handleClick = () => {
-    window.open("https://fitbodyclub.netlify.app/", "_blank");
+    window.open("https://fitbody.team/fitcafe", "_blank");
   };
   return (
     <div className="hero" id="home">
-      <div className="blur hero-blur"></div>
+      
       <div className="left-h">
-        <Header />
+      <Header />
         {/* slogan */}
-        <div className="slogan">
-          <motion.div
-            initial={{ left: mobile ? "165px" : "238px" }}
-            whileInView={{ left: "8px" }}
-            transition={{ ...transition, type: "tween" }}
-          ></motion.div>
-          <span>Sporun Kalbi burada atıyor 💛💛</span>
-        </div>
+        
         {/* Büyük Slogan */}
         <div className="hero-text">
-          <div>
+          <div className="flex-span">
             <span className="bosluk-text">Hayalinizdeki </span>
-            <span>Vücuda</span>
+            <span className='bosluk-text2'>Vücuda </span>
+            <span className="bosluk-text-divelement">Kavuşma Zamanı</span>
           </div>
-          <div>
-            <span>Kavuşma Zamanı</span>
-          </div>
-          <div>
-            <span>
+          <div className="hayal-vucud-div">
+            <span className="hayal-vucud">
               Burada sizlere hayalinizdeki vücuda kavuşmanıza yardım ediyoruz.
               Siz de yapabilirsiniz!
             </span>
           </div>
         </div>
         {/* Figürler */}
-        <div className="figures">
-          <div>
-            <span>
-              <NumberCounter end={1600} start={1000} delay="4" preFix="+" />
-            </span>
-            <span>metrekare</span>
+        <div className="button-body">
+          <div className="figures">
+            <div>
+              <span className="number-counter">
+                <NumberCounter end={1600} start={1000} delay="6" preFix="+" />
+              </span>
+              <span className="span-color">M2</span>
+            </div>
+            <div>
+              <span className="number-counter">
+                <NumberCounter end={1000} start={500} delay="7" preFix="+" />
+              </span>
+              <span className="span-color">Aktif Üyelik</span>
+            </div>
+            <div>
+              <span className="number-counter">
+                <NumberCounter end={500} start={150} delay="5" preFix="+" />
+              </span>
+              <span className="span-color">Ekipman</span>
+            </div>
           </div>
-          <div>
-            <span>
-              <NumberCounter end={1000} start={500} delay="5" preFix="+" />
-            </span>
-            <span>Aktif Üyelik</span>
+          {/*Butonlar  */}
+          <div onClick={handleClick} className="hero-buttons">
+            <button id="button2" className="btn">
+              FITCAFE
+            </button>
           </div>
-          <div>
-            <span>
-              <NumberCounter end={500} start={150} delay="3" preFix="+" />
-            </span>
-            <span>Ekipman</span>
-          </div>
-        </div>
-        {/*Butonlar  */}
-        <div onClick={handleClick} className="hero-buttons">
-          <button id="button2" className="btn">
-            FitCafe
-          </button>
         </div>
       </div>
-      <div className="right-h">
-        <motion.div
-          initial={{ right: "-1rem" }}
-          whileInView={{ right: "4rem" }}
-          transition={transition}
-          className="heart-rate"
-        >
-          <img src={Heart} alt="" />
-          <span>Heart Rate</span>
-          <span>116bpm</span>
-        </motion.div>
-        {/* Hero images */}
-        <img src={hero_image} alt="" className="hero-image" id="hero_image" />
-        <motion.img
-          initial={{ right: "11rem" }}
-          whileInView={{ right: "20rem" }}
-          transition={transition}
-          src={hero_image_back}
-          alt=""
-          className="hero-image-back"
-          id="hero_image_back"
-        />
-        {/* Kalori */}
-        <motion.div
-          initial={{ right: "37rem" }}
-          whileInView={{ right: "28rem" }}
-          transition={transition}
-          className="calories"
-        >
-          <img src={Calories} alt="" />
-          <div>
-            <span>Kalori</span>
-            <span>220 kcal</span>
-          </div>
-        </motion.div>
+      <div className="right-hs">
+        
+  
+        
+      
+        
       </div>
     </div>
   );
